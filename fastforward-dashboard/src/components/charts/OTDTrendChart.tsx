@@ -50,7 +50,7 @@ export const OTDTrendChart: React.FC<OTDTrendChartProps> = ({ data }) => {
             boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
           }}
           labelStyle={{ color: '#334155', fontWeight: 600 }}
-          formatter={(value: number) => [`${value}%`, 'OTD%']}
+          formatter={(value) => [`${value}%`, 'OTD%']}
           labelFormatter={(label, payload) => payload[0]?.payload?.fullDate || label}
         />
         <ReferenceLine
